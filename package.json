@@ -12,30 +12,25 @@
     "generate": "prisma generate",
     "lint": "eslint --fix src/*",
     "migrate": "prisma migrate dev ",
-    "studio": "prisma studio -p 5000"
+    "studio": "prisma studio -p 5000",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
-  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.1",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "prisma": "^2.29.0",
     "sucrase": "^3.20.0",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-node-externals": "^3.0.0",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "@prisma/client": "^2.29.0",
